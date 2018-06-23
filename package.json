@@ -1,0 +1,21 @@
+{
+  "name": "nomnoml2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tony_kero",
+  "license": "MIT",
+  "dependencies": {
+    "chevrotain": "^3.6.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-typescript": "^5.0.0-alpha.2",
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^10.3.4"
+  }
+}
