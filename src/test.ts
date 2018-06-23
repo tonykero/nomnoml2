@@ -7,10 +7,10 @@ import * as path from "path"
 import * as util from "util"
 
 const test = 
-`
-[ 0 0]->[jambon]
-[prout]--->[jambonneau]
-`
+`[ 0 0]->[jambon]
+[prout]-->[jambonneau]
+[test]
+[caca]->[ saumon ]`
 
 console.log(parse(test).ast)
 

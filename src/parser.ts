@@ -55,8 +55,7 @@ class CSTVisitor extends BaseNomnomlVisitor {
 
     nomnoml(ctx){
 
-        let objs = [] 
-        console.log(ctx)
+        let objs = []
         
         ctx.object.forEach((el) => {
             objs.push(this.visit(el))

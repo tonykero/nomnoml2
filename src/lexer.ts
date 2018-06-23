@@ -3,15 +3,16 @@ import {
     Lexer
 } from "chevrotain"
 
-const LSquare       = createToken({ name: "LSquare",        pattern: /\[/ })
-const RSquare       = createToken({ name: "RSquare",        pattern: /\]/ })
-//const Pipe          = createToken({ name: "Pipe",           pattern: /|/})
-const StringLiteral = createToken({ name: "StringLiteral",  pattern: /[a-zA-Z0-9\s]+/})
-const Arrow         = createToken({ name: "Arrow",          pattern: /-*>/ })
+const LSquare          = createToken({ name: "LSquare",          pattern: /\[/ })
+const RSquare          = createToken({ name: "RSquare",          pattern: /\]/ })
+//const Pipe           = createToken({ name: "Pipe",             pattern: /|/})
+const StringLiteral    = createToken({ name: "StringLiteral",    pattern: /[a-zA-Z0-9 ]+/})
+const SpecialCharacter = createToken({ name: "SpecialCharacter", pattern: /[ -_.]+/})
+const Arrow            = createToken({ name: "Arrow",            pattern: /-*>/ })
 /*
 const Whitespace    = createToken({
     name: "WhiteSpace",
-    pattern: /[\t\n\r]+/,
+    pattern: /[\n]+/,
     group: Lexer.SKIPPED
 })
 */
